@@ -1,0 +1,15 @@
+
+main {
+  display: flex;
+  flex-direction: row;
+  
+}
+.Folders {
+  margin: 10px;
+  padding: 10px;
+} 
+
+.Notes {
+  margin: 10px;
+  padding: 10px;
+} 
