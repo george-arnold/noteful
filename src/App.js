@@ -1,19 +1,20 @@
-import React, { Component } from "react";
-
+import React, { Component } from 'react';
+import { Link, Route } from 'react-router-dom';
+import Notes from './Notes';
+import Folders from './Folders';
 
 class App extends Component {
-  // constructor() {
-  //   super()
-  //   this.state = {
-     
-  //   };
-  // }
   render() {
-  
     return (
-      <main>
-        <h1> Test </h1>
-      </main>
+      <div className="App">
+        <header>
+          <Link to="/"> Noteful</Link>
+        </header>
+        <main>
+          <Route exact path="/" component={Folders}></Route>
+          <Route exact path="/" component={Notes} />
+        </main>
+      </div>
     );
   }
 }
