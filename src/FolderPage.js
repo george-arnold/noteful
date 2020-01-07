@@ -1,7 +1,11 @@
 import React, { Component } from 'react';
+import STORE from './store';
+import { withRouter } from 'react-router-dom';
 
 class FolderPage extends Component {
   render() {
+    // const filteredNotes = STORE.notes.filter(note => note.folderId=== )
+
     return (
       <div>
         
@@ -10,4 +14,4 @@ class FolderPage extends Component {
   }
 }
 
-export default FolderPage;
+export default withRouter(FolderPage);

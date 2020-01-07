@@ -13,9 +13,10 @@ class App extends Component {
           <Link to="/"> Noteful</Link>
         </header>
         <main>
-          <Route exact path="/" component={Folders}></Route>
+          <Route path= "/" component={Folders}></Route>
+          <Route exact path="/folder" component={Folders}></Route>
           <Route exact path="/" component={Notes} />
-          <Route path="/folder/:folderId" component={FolderPage} />
+          
         </main>
       </div>
     );

@@ -1,18 +1,20 @@
 import React, { Component } from 'react';
-import {Link} from 'react-router-dom';
+import { Route, Link } from 'react-router-dom';
+import STORE from './store';
+import FolderPage from './FolderPage';
+
 
 class Folders extends Component {
   render() {
     return (
       <div className="Folders">
-        <div>
-          <Link to = "/folder/:folderId">
-          <h2>Folder</h2>
-          </Link>
-          <h2>Folder</h2>
-          <h2>Folder</h2>
-          <button> Add Folder</button>
-        </div>
+        {STORE.folders.map(folder => (
+          <Link key={folder.id} to = {`/folder/${folder.id}`}> <div className='folder' >
+            <h2> {folder.name}</h2>
+          </div> </Link>
+        ))}
+        <button> Add Folder</button>
+        <Route path="/:folderId" component={FolderPage} />
       </div>
     );
   }
