@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import { Route, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import STORE from './store';
-import FolderPage from './FolderPage';
+
 
 
 class Folders extends Component {
@@ -14,7 +14,6 @@ class Folders extends Component {
           </div> </Link>
         ))}
         <button> Add Folder</button>
-        <Route path="folder/:folderId" component={FolderPage} />
       </div>
     );
   }
