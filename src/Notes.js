@@ -4,7 +4,6 @@ import Moment from 'react-moment';
 
 class Notes extends Component {
   render() {
-    console.log
     return (
       <div className="Notes">
         {STORE.notes.map(note => (
