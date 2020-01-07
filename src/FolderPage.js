@@ -4,11 +4,10 @@ import { withRouter } from 'react-router-dom';
 
 class FolderPage extends Component {
   render() {
-    // const filteredNotes = STORE.notes.filter(note => note.folderId=== )
 
     return (
       <div>
-        
+        <p>{this.props.match.params.id}</p>
       </div>
     )
   }

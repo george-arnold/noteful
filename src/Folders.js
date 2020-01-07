@@ -14,7 +14,7 @@ class Folders extends Component {
           </div> </Link>
         ))}
         <button> Add Folder</button>
-        <Route path="/:folderId" component={FolderPage} />
+        <Route path="folder/:folderId" component={FolderPage} />
       </div>
     );
   }
